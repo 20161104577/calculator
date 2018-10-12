@@ -16,72 +16,113 @@ class ViewController: UIViewController {
     var control:Int = 0
     var control_minus:Int = 0
     var number_one:String = ""
+    var NumberOfCalculate:Int = 0
    
     @IBAction func number_1(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "1"
     }
     
     @IBAction func number_2(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "2"
     }
     
     @IBAction func number_3(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "3"
     }
     
     @IBAction func number_4(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "4"
     }
     
     @IBAction func number_5(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "5"
     }
     
     @IBAction func number_6(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "6"
     }
     
     @IBAction func number_7(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "7"
     }
     
     @IBAction func number_8(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "8"
     }
     
     @IBAction func number_9(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "9"
     }
     
     @IBAction func number_0(_ sender: Any) {
+        
         if num.text == "0" {
+            num.text = ""
+        }
+        if number_one != "" && NumberOfCalculate == 1 {
             num.text = ""
         }
         num.text = num.text! + "0"
@@ -113,32 +154,52 @@ class ViewController: UIViewController {
             strtemp.removeLast()
         }
         num.text = strtemp
-        
-        
+        control = 0
+        number_one = num.text!
+        NumberOfCalculate = NumberOfCalculate + 1
     }
     
+    
+    
     @IBAction func divide(_ sender: Any) {
+        if control != 0 {
+            equal(control)
+        }
         control = 3
-        number_one = num.text!
+        //number_one = num.text!
         num.text = "0"
+        NumberOfCalculate = 0
     }
     
     @IBAction func add(_ sender: Any) {
+        if control != 0 {
+            equal(control)
+            
+        }
         control = 2
-        number_one = num.text!
+        //number_one = num.text!
         num.text = "0"
+        NumberOfCalculate = 0
     }
     
     @IBAction func subtract(_ sender: Any) {
+        if control != 0 {
+            equal(control)
+        }
         control = 1
-        number_one = num.text!
+        //number_one = num.text!
         num.text = "0"
+        NumberOfCalculate = 0
     }
     
     @IBAction func ride(_ sender: Any) {
+        if control != 0 {
+            equal(control)
+        }
         control = 4
-        number_one = num.text!
+        //number_one = num.text!
         num.text = "0"
+        NumberOfCalculate = 0
     }
     
     @IBAction func AC(_ sender: Any) {
