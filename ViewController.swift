@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "1"
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "2"
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "3"
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "4"
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "5"
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "6"
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "7"
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "8"
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "9"
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
         if num.text == "0" {
             num.text = ""
         }
-        if number_one != "" && NumberOfCalculate == 1 {
+        if number_one != "" && NumberOfCalculate == 1 && num.text != "" {
             num.text = ""
         }
         num.text = num.text! + "0"
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
             equal(control)
         }
         control = 3
-        //number_one = num.text!
+        number_one = num.text!
         num.text = "0"
         NumberOfCalculate = 0
     }
@@ -177,7 +177,7 @@ class ViewController: UIViewController {
             
         }
         control = 2
-        //number_one = num.text!
+        number_one = num.text!
         num.text = "0"
         NumberOfCalculate = 0
     }
@@ -187,7 +187,7 @@ class ViewController: UIViewController {
             equal(control)
         }
         control = 1
-        //number_one = num.text!
+        number_one = num.text!
         num.text = "0"
         NumberOfCalculate = 0
     }
@@ -197,7 +197,7 @@ class ViewController: UIViewController {
             equal(control)
         }
         control = 4
-        //number_one = num.text!
+        number_one = num.text!
         num.text = "0"
         NumberOfCalculate = 0
     }
