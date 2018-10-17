@@ -17,6 +17,23 @@ class ViewController: UIViewController {
     var control_minus:Int = 0
     var number_one:String = ""
     var NumberOfCalculate:Int = 0
+    
+    func PowerOfARoot(numOne:Double,numTwo:Double)->Double {
+        var NumOne:Double = numOne
+        var NumTwo:Double = numTwo
+        
+        while(true) {
+            if(NumTwo == 1) {
+                break;
+            }
+            NumOne = NumOne * numOne
+            NumTwo = NumTwo - 1
+        }
+        let value:Double = NumOne
+        return value
+        
+        
+    }
    
     @IBAction func number_1(_ sender: Any) {
         
@@ -143,10 +160,13 @@ class ViewController: UIViewController {
             strtemp = "\(Double(number_one)! / Double(num.text!)!)"
         case 4:
             strtemp = "\(Double(number_one)! * Double(num.text!)!)"
+        case 6:
+            strtemp = "\(PowerOfARoot(numOne: Double(number_one)!, numTwo: Double(num.text!)!))"
         default:
             strtemp = "0"
         }
         
+        strtemp = String(format:"%.8f",Double(strtemp)!)
         while (strtemp.last == "0"){
             strtemp.removeLast()
         }
@@ -197,6 +217,18 @@ class ViewController: UIViewController {
             equal(control)
         }
         control = 4
+        number_one = num.text!
+        num.text = "0"
+        NumberOfCalculate = 0
+    }
+    
+
+    
+    @IBAction func Power(_ sender: Any) {//乘方运算
+        if control != 0 {
+            equal(control)
+        }
+        control = 6
         number_one = num.text!
         num.text = "0"
         NumberOfCalculate = 0
