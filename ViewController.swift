@@ -190,7 +190,7 @@ class ViewController: UIViewController {
         if (strtemp.last == "."){
             strtemp.removeLast()
         }
-        if num.text == "0" {
+        if num.text == "0" && control == 3 {
             num.text = "错误"
         }
         else {
