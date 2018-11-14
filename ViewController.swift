@@ -183,12 +183,17 @@ class ViewController: UIViewController {
             strtemp = "0"
         }
         
+        let DouTemp:Double = Double(strtemp)!
         strtemp = String(format:"%.8f",Double(strtemp)!)
         while (strtemp.last == "0"){
             strtemp.removeLast()
         }
         if (strtemp.last == "."){
             strtemp.removeLast()
+        }
+        
+        if DouTemp < 0 {
+            control_minus = 1
         }
         if num.text == "0" && control == 3 {
             num.text = "错误"
