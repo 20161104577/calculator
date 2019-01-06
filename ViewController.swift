@@ -277,6 +277,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func return_value(_ sender: Any) {
+        if(num.text?.last == ".")
+        {
+            point_judge = false
+        }
         num.text?.removeLast()
         if(num.text == "")
         {
